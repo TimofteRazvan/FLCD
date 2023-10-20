@@ -1,0 +1,24 @@
+Alphabet:
+a) Upper and lower case letters of the English alphabet(a-z, A-Z)
+b) Decimal digits(0-9)
+
+Lexic:
+a) Special symbols:
+   - operators + - = * / < > <= >= == !=
+   - separators () [] {} , : space
+   - reserved words: array boolean char integer for while  if else
+b) Identifiers:
+   - a sequence of letters and digits(starting with a letter):
+     <identifier> ::= <letter> | <letter> <sequence>
+     <sequence> ::= <letter> | <digit> | <letter> <sequence> | <digit> <sequence>
+     <letter> ::= A | B | ... | Z | a | b | ... | z
+     <digit> ::= 0 | 1 | ... | 9
+c) Constants:
+   - integer:
+	<const> ::= +<nos> | -<nos> | 0
+	<nos> ::= <nonzerodigit> | <nos> <digit>
+	<nonzerodigit> ::= 1 | 2 | ... | 9
+   - character:
+	<charater> ::= <letter> | <digit>
+   - boolean:
+	<boolean> ::= true | false

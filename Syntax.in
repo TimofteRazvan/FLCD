@@ -1,0 +1,15 @@
+<type> ::= boolean | char | integer
+<declaration> ::= <type> <identifier> ;
+<arraydec> ::= array <identifier> [] ;
+
+<assignstmt> ::= <identifier> = <expression> ;
+<expression> ::= <constants> <sign> <constants> | <constants> 
+<sign> ::= + | - | * | /
+<constants> ::= <const> | <character>
+
+<iostmt> ::= read <identifier> ; | write <identifier> ;
+<ifstmt> ::= if ( <condition> ) { <stmt> } | if ( <condition> ) { <stmt> } else { <stmt> }
+<stmt> ::= <iostmt> | <ifstmt> | <whilestmt> | <assignstmt> | <stmt> <stmt>
+
+<relations> ::= < | <= | == | != | > | >=
+<condition> ::= while ( <expression> <relations> <expression> ) { <stmt> }
