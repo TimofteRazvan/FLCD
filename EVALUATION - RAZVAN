@@ -1,0 +1,6 @@
+Tokens - NO ISSUES
+
+Lexic - INTEGER CONST - Cannot begin integer with '0'
+                      - Cannot have '+0' or '-0'
+
+Syntax - CORRECT
