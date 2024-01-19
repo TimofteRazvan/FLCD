@@ -1,6 +1,7 @@
+package org.example;
+
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -20,26 +21,21 @@ public class App {
         //     System.out.println("The sequence " + userInput + " is not valid.");
         // }
         //--------------------------------------------------------------
-        Grammar grammar = new Grammar();
-        grammar.readGrammarFromFile("D:\\University\\Year - 3\\Tehnici de compilare\\Lab3\\Lab3\\src\\g6.txt"); // Provide the file name containing the grammar
+        // Grammar grammar = new Grammar();
+        // grammar.readGrammarFromFile("D:\\University\\Year - 3\\Tehnici de compilare\\Lab3\\Lab3\\src\\g2.txt"); // Provide the file name containing the grammar
 
-        grammar.printNonTerminals();
-        grammar.printTerminals();
-        grammar.printProductions();
+        // grammar.printNonTerminals();
+        // grammar.printTerminals();
+        // grammar.printProductions();
 
         // boolean isCFG = grammar.isCFG();
         // System.out.println("Is the grammar in CFG form? " + isCFG);
         //------------------------------------------------------------------
         Parser parser = new Parser();
         parser.printParsingTable();
-        parser.printFirstAndFollowSets();
-        System.out.println("Parse tree: ");
-        parser.printParseTree(parser.getParseTreeRoot(), 0);
-
-        // ParserOutput parserOutput = new ParserOutput();
-        // String input = "R +";
-        // ParserOutput.Node parsingTree = parserOutput.transformParsingTree(input);
-        // System.out.println("Parsing Tree:");
-        // parserOutput.printToScreen(parsingTree);
+        //List<String> sequence = new ArrayList<>(List.of("a", "*", "(", "a", "+", "a", ")"));
+        //List<String> parsingTree = ParserOutput.buildParsingTree(parser, sequence);
+        //ParserOutput.printToScreen(parsingTree);
+        //ParserOutput.printToFile(parsingTree, "parsing_tree_output.txt");
     }
 }
