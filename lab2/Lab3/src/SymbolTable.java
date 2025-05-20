@@ -13,7 +13,7 @@ public class SymbolTable {
         }
     }
 
-    private int getPosition(Object value) {
+    public int getPosition(Object value) {
         for (Integer key : symbolTable.getKeys()) {
             if (symbolTable.get(key).equals(value)) {
                 return key;
@@ -24,6 +24,6 @@ public class SymbolTable {
 
     @Override
     public String toString() {
-        return "SymbolTable :" + "\nsymbolTable = " + symbolTable.toString();
+        return symbolTable.toString();
     }
 }
